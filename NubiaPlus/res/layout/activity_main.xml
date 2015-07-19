@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ssj="http://schemas.android.com/apk/res/com.ssj.nubiaplus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+<!-- 
+<com.ssj.nubiaplus.ui.SettingView
+        android:id="@+id/sv_smsnotify"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ssj:Title="短信框提醒"
+        ssj:Desc="短信提醒已经打开#短信提醒已经关闭"  />
+ -->
+    
+	<fragment 
+	    class="com.ssj.nubiaplus.MainActivity.SettingFragment"
+	    android:id="@+id/fragment_setting"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" />
+</LinearLayout>

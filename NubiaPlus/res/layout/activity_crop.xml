@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom" >
+
+   <com.edmodo.cropper.CropImageView
+       android:layout_above="@+id/ll_crop"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cropImageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+   <LinearLayout 
+       android:id="@+id/ll_crop"
+        android:layout_alignParentBottom="true"
+       android:layout_height="wrap_content"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+       
+       <Button
+        android:id="@+id/btn_select_pic"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="选择壁纸"
+        android:onClick="cropPic"/>
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_setwallpaper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="setWallPaper"
+        android:text="设置壁纸" />
+       
+   </LinearLayout>
+	
+
+</RelativeLayout>

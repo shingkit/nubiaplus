@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory
+        android:title="短信">
+   		 <CheckBoxPreference
+        	android:key="smsnotify"
+        	android:title="短信弹窗提醒"
+        	android:summaryOn="短信提醒已打开"
+        	android:summaryOff="短信提醒已关闭"
+        	android:defaultValue="false"
+        	/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="锁屏">
+        <CheckBoxPreference android:title="一键锁屏"
+            android:summaryOn="请先打开设备管理器，再在桌面创建控件"
+            android:summaryOff="卸载本应用前请关闭此选项"
+            android:key="onekeylock"/>
+        <Preference 
+            android:title="创建桌面快捷方式"
+            android:key="create_onekeylock_shortcut"/>
+    </PreferenceCategory>
+    
+     <PreferenceCategory android:title="壁纸">
+        <Preference android:title="设置竖屏壁纸"
+            android:key="setwallpaper"
+            android:summary="设置完成后重启生效" />
+        <Preference android:title="清除模糊效果"
+            android:key="clearblur"
+            android:summary="清除锁屏界面和打开文件夹后的背景模糊效果,需要ROOT" />
+    </PreferenceCategory>
+</PreferenceScreen>
+

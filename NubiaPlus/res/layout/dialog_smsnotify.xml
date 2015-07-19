@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" 
+    android:background="@drawable/edittext_bg">"
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <ImageView 
+        android:src="@drawable/niuniu01"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+    <Space 
+        android:layout_height="fill_parent"
+        android:layout_width="8dp"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:textSize="30sp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名：" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+    <Space android:layout_width="20dp"
+        android:layout_height="match_parent"/>
+	<ImageView 
+        android:src="@drawable/phone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+	<Space android:layout_width="8dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_phonenumber"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号：" />
+    
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_sms_content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/content_sms"
+       		 android:textColor="#000000"/>
+
+    </ScrollView>
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent" >
+    <EditText
+        android:id="@+id/et_msg_content"
+        android:background="@drawable/text_field_1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:ems="10" 
+        android:singleLine="true">
+        <requestFocus />
+    </EditText>
+    <Space 
+        android:layout_height="fill_parent"
+        android:layout_width="4dp"/>
+    <Button 
+        android:background="@drawable/zte_ic_menu_send"
+        android:id="@+id/btn_send"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent">
+	    <Button 
+	        android:text="已读"
+	        android:id="@+id/btn_signread"
+	        android:layout_weight="1"
+	        android:layout_height="48dp"
+	        android:layout_width="48dp"/>
+	    <Button 
+	        android:id="@+id/btn_gotoSms"
+	        android:text="进去短信"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"/>
+	    <Button 
+	        android:id="@+id/btn_cancel"
+	        android:text="忽略"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>
